@@ -2,8 +2,18 @@
   "name": "youtube-app",
   "version": "1.0.5-beta1",
   "scripts": {
+    "dev": "gulp dev",
+    "build": "gulp sass; gulp copy-static-files;",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "youtube-ui-lib": "^1.0.0-beta1"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.0.2",
+    "node-sass": "^4.12.0"
+  }
 }
