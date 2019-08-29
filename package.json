@@ -1,0 +1,9 @@
+{
+  "name": "youtube-app",
+  "version": "1.0.5-beta1",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
