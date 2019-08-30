@@ -1,6 +1,6 @@
 {
   "name": "youtube-app",
-  "version": "1.0.5-beta1",
+  "version": "1.0.5-beta2",
   "scripts": {
     "prepublish": "npm run build;",
     "dev": "concurrently \"rollup --config --watch\" \"gulp dev\"",
