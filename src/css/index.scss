@@ -57,6 +57,18 @@
     &__title {
         margin: 0px 24px 24px 24px;
     }
+
+    &__header-left {
+        float: left;
+        margin-bottom: 24px;
+        margin-left: 24px;
+    }
+
+    &__header-right {
+        float: right;
+        margin-bottom: 24px;
+        margin-right: 24px;
+    }
 }
 
 .l-trending-youtubers {
