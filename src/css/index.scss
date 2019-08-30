@@ -1,1 +1,57 @@
 @import '../../node_modules/youtube-ui-lib/src/index.scss';
+
+.btn {
+    display: inline-block;
+}
+
+.l-main-layout {
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    background: #f3f3f3;
+
+    &__aside {
+        flex: 0 1 240px;
+
+        display: flex;
+        flex-direction: column;
+
+        & > .nav {
+            flex-grow: 1;
+        }
+    }
+
+    &__content {
+        flex: 0 1 100%;
+        overflow-y: auto;
+        max-height: 100vh;
+    }
+}
+
+.l-card-grid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    padding: 24px;
+
+    .card {
+        flex: 0 0 32%;
+        margin-bottom: 2%;
+    }
+
+    // A placeholder to placehold missing cards in a row
+    &__spacer {
+        flex: 0 0 32%;
+        margin-bottom: 2%;
+    }
+}
+
+.w-960 {
+    max-width: 960px;
+}
