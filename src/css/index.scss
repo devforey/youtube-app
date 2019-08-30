@@ -1,9 +1,5 @@
 @import '../../node_modules/youtube-ui-lib/src/index.scss';
 
-.btn {
-    display: inline-block;
-}
-
 .l-main-layout {
     width: 100vw;
     height: 100vh;
@@ -32,13 +28,65 @@
     }
 }
 
+.l-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    &__left {
+        flex: 0 1 320px;
+        padding: 24px 12px 24px 24px;
+
+        .input {
+            width: 100%;
+        }
+    }
+
+    &__right {
+        flex: 0 1 auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding: 24px 24px 24px 0;
+    }
+}
+
+.l-section {
+    margin-bottom: 48px;
+    margin-top: 24px;
+
+    &__title {
+        margin: 0px 24px 24px 24px;
+    }
+}
+
+.l-trending-youtubers {
+    padding: 0 24px;
+    display: flex;
+    flex-direction: row;
+
+    &__item {
+        margin-right: 24px;
+
+        // TODO: To move to UI Lib
+        .people-widget__title {
+            text-align: center;
+            width: 72px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    }
+}
+
 .l-card-grid {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
 
-    padding: 24px;
+    padding: 0 24px;
 
     .card {
         flex: 0 0 32%;
@@ -52,6 +100,6 @@
     }
 }
 
-.w-960 {
-    max-width: 960px;
+.margin-right-12 {
+    margin-right: 12px;
 }
